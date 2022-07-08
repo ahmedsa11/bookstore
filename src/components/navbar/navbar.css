@@ -1,0 +1,140 @@
+:root {
+    --primary: #8c38ff;
+    --light: #EEEEEE;
+    --dark: #212121;
+  }
+ nav .main{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--primary);
+  }
+
+ nav h1  {
+    color: #FFF;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  
+.main .hamburger {
+    display: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+ .hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--light);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+  }
+  
+  .hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: var(--primary);
+  }
+  
+  .hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+  }
+  
+ .hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  
+ .hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+  }
+  
+  .hamburger.is-active:hover span {
+    background-color: var(--primary);
+  }
+  
+  .menu {
+    display: contents;
+  }
+  
+  .menu a {
+    color: #FFF;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+  }
+  
+  .menu a.active, .menu a:hover{
+    background-color: var(--primary);
+  }
+nav .language{
+    color: #FFF;
+    cursor: pointer;
+}
+nav .language .en:hover{
+    color: #8c38ff;}
+    nav .language .ar:hover{
+        color: #b593e3;}
+nav button:first-of-type{
+    padding: 8px;
+    background: dimgrey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+  @media (max-width: 800px) {
+    .shownav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        width: 100%;
+        background-color: var(--dark);
+        padding: 16px 32px;
+        border-bottom: 3px solid var(--primary);
+        height: 100%;
+      }
+    .hamburger {
+      display: block !important;
+    }
+    .menu{
+      display: none;
+    }
+    .showmenu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        top: 50%;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .showmenu a{
+        width: 100%;
+    }
+  }
+
+  

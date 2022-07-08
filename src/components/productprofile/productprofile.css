@@ -1,0 +1,51 @@
+/*prod*/
+.prod h5{
+    margin: 3px 0px;
+    font-weight: normal;
+  }
+  .prod .pay{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+  }
+  .prod #data{
+    display: none;
+ }
+ .prod #data:target{
+   display: block;
+ }
+ .prod .pay a:first-child{
+   color: white;
+   background-color: gray;
+   text-decoration: none;
+   margin: auto 0px;
+   padding: 6px;
+ }
+ .prod .pay a:last-child i {
+   color: white;
+   background-color: gray;
+   text-decoration: none;
+   margin: auto 0px;
+   padding: 3px 6px;
+   margin: 10px 0px;
+ }
+    .prod span{
+      display: block;
+      font-size: 30;
+  }
+  .prod h1{
+    text-align:start;
+  }
+  .prod p{
+    font-size: 20px;
+    font-weight: unset;
+  }
+  .prod .addpr{
+      width: 100%;
+      height: 50px;
+      font-size: 25;
+      background-color: gray;
+  }
+  .prod button:hover{
+      background-color: dimgrey;
+  }
