@@ -1,0 +1,30 @@
+/*Start Footer*/
+.footer{
+    padding: 70px 0;
+        background-color:dimgrey;
+    color: aliceblue;
+
+}
+.footer h1,.footer h2{
+      color: aliceblue;
+}
+.footer ul{
+    list-style: none;padding: 0
+}
+.footer ul li a{
+     color: aliceblue !important;
+    text-decoration: none
+}
+.footer ul li {margin-bottom: 15px}
+.footer i{font-size: 25px;color:white;margin-right: 15px;transition: all .5s ease;
+    cursor: pointer}
+.footer ul li i{
+    color:#47b2e4;
+    font-size: 16px;
+    }
+.footer i:hover{color:cyan}
+/*Copyright*/
+.copy{
+    background-color: #1e6282;padding: 20px 0;color: #fff;text-align: center;
+}
+.copy h3{font-size: 20px}

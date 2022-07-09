@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./form.css";
 import { useSelector, useDispatch } from "react-redux";
 import { register, handleerror } from "../redusers/userslice";
+import { Link } from 'react-router-dom';
 function Signin() {
   const dispatch = useDispatch();
   let { error } = useSelector((state) => state.users);
@@ -40,7 +41,7 @@ function Signin() {
         <input type='password'value={password} onChange={(e)=>setPassword(e.target.value)}/>
         {error&& error.password && <span>{error.password}</span>}
         <button type='submit'>Login</button>
-        <a href='#signup'>Signup</a>
+        <Link to='signup'>Signup</Link>
     </form>
 </div>
   )

@@ -2,7 +2,9 @@ import React from "react";
 import { useState } from "react";
 import "./form.css";
 import { useSelector, useDispatch } from "react-redux";
-import { register, handleerror } from "../redusers/userslice";
+import { handleerror } from "../redusers/userslice";
+import {insetrUser} from '../redusers/userslice'
+import {Link}from 'react-router-dom'
 function Signup() {
   const dispatch = useDispatch();
   let { error } = useSelector((state) => state.users);
@@ -45,7 +47,7 @@ function Signup() {
       password,
       confirmPassword,
     };
-    dispatch(register(users))
+    dispatch(insetrUser(users))
       setName("")
       setEmail("")
       setPassword("")
@@ -73,7 +75,7 @@ function Signup() {
           <span> { error.confirmPassword}</span>
         )}
         <button type="submit">Register</button>
-        <a href="#signin">Signin</a>
+        <Link to='signin'>Signin</Link>
       </form> 
     </div>
   );

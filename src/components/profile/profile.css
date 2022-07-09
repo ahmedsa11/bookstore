@@ -1,0 +1,52 @@
+/*profile*/
+.pro {
+   
+    overflow: hidden;
+    padding-top: 80px;
+}
+.pro .st p{
+  font-weight: 100 !important;
+  font-size: 20px;}
+.reset ,.button{
+  border: none;
+  background-color: gray;
+  color: white;
+  padding: 6px;
+  margin: 12px 0px;
+  float: right;
+  text-decoration: none;
+
+}
+.del{
+  border: none;
+  background-color: gray;
+  color: white;
+
+  padding: 8px 3px;
+  width: 66px;
+  margin: 12px 0px;
+  float: right;
+  text-decoration: none;
+  border-radius: inherit;
+
+}
+
+.ch{
+  border: none;
+  background-color: gray;
+  color: white;
+  padding: 9px;
+  margin: 12px 0px;
+  float: right;
+  text-decoration: none;
+
+}
+.ch:hover{
+  color: white;
+}
+.button{
+  float: none;
+}
+.button:hover{
+  color: white;
+}

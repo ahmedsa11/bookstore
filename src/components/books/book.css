@@ -15,19 +15,21 @@
     color: red;
     font-size: 21px;
     position: absolute;
-    right: 12px;
+    right: 22px;
     bottom: 118px;
 }
 .book .imgbook{
     width: 100%;
     text-align: center;
 }
+
 .book .imgbook{
 overflow: hidden;
 }
 .book .imgbook img{
     width: 100%;
     object-fit: cover;
+    height: 375px;
 }
 .book .book-info{
     width: 100%;
@@ -42,6 +44,14 @@ overflow: hidden;
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
+}
+.book .book-info .price del{
+    color: red;
+    font-weight: bold;
+}
+.book .book-info .price ins{
+    color: black;
+    font-weight: bold;
 }
 .book .book-price{
     width: 100%;
