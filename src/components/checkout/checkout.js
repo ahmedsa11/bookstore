@@ -1,5 +1,7 @@
 import React from "react";
 import './checkout.css'
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import check from '../../img/check-out.png'
 function Checkout() {
   return (
     <>
@@ -7,14 +9,14 @@ function Checkout() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-xs-12">
-              <img className="w-100" src="images/css.png" alt="sd"/>
+              <img className="w-100" src={check} alt="sd"/>
             </div>
             <div className="col-md-6 col-xs-12">
               <div className="pay">
                 <a href="#data">Paiement when recieving</a>{" "}
-                <a href="payp" id="paypal">
-                  <i className="fab fa-cc-paypal"></i>
-                </a>
+                <PayPalScriptProvider options={{ "client-id": "test" }}>
+            <PayPalButtons style={{ layout: "horizontal" }} />
+        </PayPalScriptProvider>
               </div>
               <div className="paydel" id="data">
                 <h4>name : </h4>
