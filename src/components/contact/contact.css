@@ -1,0 +1,33 @@
+.cont{
+    margin: 20px 0px;
+  }
+  .cont form .btnn{
+    width: 100%;
+    /* margin-left: 5px; */
+    display: block;
+    background-color: rgba(82,78,78,0.7);
+    color: aliceblue;
+    border-radius: 0;
+    border: none;
+  
+  }
+  .cont form input[type="text"],.cont form textarea,.cont form .btn{
+    background-color: rgba(82,78,78,0.7);
+    color: aliceblue;
+    border-radius: 0;
+    margin: 9px 0px;
+    
+  }
+  .cont form input[type="text"]{
+  
+    padding: 10px;
+  }
+  .cont form textarea::placeholder{
+    color: white;
+  }
+  .cont form textarea:focus{
+    background-color: rgba(82,78,78,0.7);
+  }
+  .cont form input[type="text"]::placeholder{
+    color: white;
+  }

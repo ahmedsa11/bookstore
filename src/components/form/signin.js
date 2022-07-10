@@ -3,12 +3,13 @@ import { useState } from "react";
 import "./form.css";
 import { useSelector, useDispatch } from "react-redux";
 import { register, handleerror } from "../redusers/userslice";
-import { Link } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 function Signin() {
   const dispatch = useDispatch();
   let { error } = useSelector((state) => state.users);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate=useNavigate()
   const validsignin = () => {
     const error = {};
     if (password === "") {
@@ -32,6 +33,7 @@ function Signin() {
     dispatch(register(users))
   };
   return (
+    <div className="formuser">
     <div className='signin'id='signin'>
     <form onSubmit={handleSubmit}>
         <label>Email</label>
@@ -41,8 +43,9 @@ function Signin() {
         <input type='password'value={password} onChange={(e)=>setPassword(e.target.value)}/>
         {error&& error.password && <span>{error.password}</span>}
         <button type='submit'>Login</button>
-        <Link to='signup'>Signup</Link>
+        <button onClick={()=>navigate('/signup')}>Signup</button>
     </form>
+</div>
 </div>
   )
 }

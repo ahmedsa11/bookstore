@@ -1,4 +1,4 @@
-#about h1, h2, h3, h4, h5, h6 {
+.about h1,.about  h2,.about  h3,.about  h4,.about  h5,.about  h6 {
     color: #2c3145;
 }
 #about a, a:hover, a:focus, a:active {

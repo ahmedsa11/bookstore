@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 function About() {
   return (
-    <section class="section_all bg-light" id="about">
+    <section class="section_all bg-light about" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">

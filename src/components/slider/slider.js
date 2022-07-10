@@ -5,9 +5,9 @@ import img3 from '../../img/sincerely-media-nGrfKmtwv24-unsplash.jpg'
 import {Carousel} from 'react-bootstrap'
 import './slide.css'
 function Slider() {
-
   return (
     <div className="slider">
+      <div className="overlay"></div>
     <Carousel fade>
     <Carousel.Item>
       <img
@@ -15,8 +15,8 @@ function Slider() {
         src={img1}        alt="First slide"
       />
       <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3 className='wow fadeInUp'data-wow-duration="1.5s">First slide label</h3>
+        <p className='wow fadeInUp'data-wow-duration="2s">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -27,8 +27,8 @@ function Slider() {
       />
   
       <Carousel.Caption>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3 className='wow fadeInUp'data-wow-duration="1.5s">Firssd</h3>
+        <p className='wow fadeInUp'data-wow-duration="2s">Nulla vsdditae elit libero, a pharetra augue mollis interdum.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -39,8 +39,8 @@ function Slider() {
       />
   
       <Carousel.Caption>
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3 className='wow fadeInUp'data-wow-duration="1.5s">Fisdsrst slide label</h3>
+        <p className='wow fadeInUp'data-wow-duration="2s">Nullasdsd vitae elit libero, a pharetra augue mollis interdum.</p>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>

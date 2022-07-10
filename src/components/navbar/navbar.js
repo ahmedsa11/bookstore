@@ -9,7 +9,7 @@ function Navbar() {
     const {en,ar} = useSelector(state => state.option);
     const navigate = useNavigate();
     const login=()=>{
-        navigate('/login')
+        navigate('/signin')
     }
   const togglenavebar = () => {
 
@@ -41,8 +41,6 @@ function Navbar() {
             {ar ?"الصفحه الرئيسيه" : "Home"}
             </NavLink>
             <NavLink to='category' href="#s">{ar?"الفئات": "Category"}</NavLink>
-            <NavLink to='about'>{ar? "عن الشركه ":"About"}</NavLink>
-            <NavLink to="contact">{ar ? "اتصل بنا ":"Contact"}</NavLink>
             <NavLink to="profile">{ar ? "الصفحه الشخصيه":"Profile"}</NavLink>
             <div className="language">
             <span className="en"onClick={()=>dispatch(english())}>EN </span>|<span className="ar" onClick={()=>dispatch(arabic())}> AR</span>

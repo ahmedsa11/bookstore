@@ -4,9 +4,10 @@ import "./form.css";
 import { useSelector, useDispatch } from "react-redux";
 import { handleerror } from "../redusers/userslice";
 import {insetrUser} from '../redusers/userslice'
-import {Link}from 'react-router-dom'
+import {useNavigate}from 'react-router-dom'
 function Signup() {
   const dispatch = useDispatch();
+  const navigate=useNavigate()
   let { error } = useSelector((state) => state.users);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -55,6 +56,7 @@ function Signup() {
     
   };
   return (
+    <div className="formuser">
     <div className="signup" id="signup">
       <form onSubmit={handleSubmit}>
         <label>Name</label>
@@ -75,8 +77,9 @@ function Signup() {
           <span> { error.confirmPassword}</span>
         )}
         <button type="submit">Register</button>
-        <Link to='signin'>Signin</Link>
+        <button onClick={()=>navigate('/signin')}>Signin</button>
       </form> 
+    </div>
     </div>
   );
 }
