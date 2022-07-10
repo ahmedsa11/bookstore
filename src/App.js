@@ -31,6 +31,7 @@ function App() {
           <Route path="profile" element={<Profile/>} />
           <Route path="checkout" element={<Checkout/>} />
           <Route path="productprofile" element={<Productprofile/>} />
+          <Route path="category/productprofile" element={<Productprofile/>} />
           <Route path="notfound" element={<Notfound/>} />
           <Route path="*" element={<Notfound/>} />
         </Routes>

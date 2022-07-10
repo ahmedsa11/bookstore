@@ -18,12 +18,12 @@ function Checkout() {
               </div>
               <div className="paydel" id="data">
                 <h4>name : </h4>
-                <label for="totalprice">total prise : </label>{" "}
+                <label htmlFor="totalprice">total prise : </label>{" "}
                 <input id="totalprice" type="text" />
                 <hr />
                 <form>
                   <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">
+                    <label htmlFor="exampleFormControlInput1" className="form-label">
                       Name
                     </label>
                     <input
@@ -35,7 +35,7 @@ function Checkout() {
                   </div>
 
                   <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">
+                    <label htmlFor="exampleFormControlInput1" className="form-label">
                       Email address
                     </label>
                     <input
@@ -46,7 +46,7 @@ function Checkout() {
                     />
                   </div>
                   <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">
+                    <label htmlFor="exampleFormControlInput1" className="form-label">
                       phone
                     </label>
                     <input
@@ -68,7 +68,7 @@ function Checkout() {
                     <option value="3">3</option>
                   </select>
                   <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">
+                    <label htmlFor="exampleFormControlInput1" className="form-label">
                       Total price
                     </label>
                     <input
@@ -78,11 +78,11 @@ function Checkout() {
                       id="exampleFormControlInput1"
                     />
                   </div>
-                  <div className="mb-3">
+                  {/* <div className="mb-3">
                     <h5>Size:</h5>
                     <div className="radio">
                       <input className="ra" type="radio" name="size" id="rd1" />{" "}
-                      <label for="rd1">M</label>
+                      <label htmlFor="rd1">M</label>
                       <input
                         className="ra"
                         type="radio"
@@ -96,13 +96,13 @@ function Checkout() {
                         name="size"
                         id="rd3"
                       />{" "}
-                      <label for="rd3">X</label>
+                      <label htmlFor="rd3">X</label>
                       <input className="ra" type="radio" name="size" id="rd4" />
-                      <label for="rd4">XL</label>
+                      <label htmlFor="rd4">XL</label>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="mb-3">
-                    <label for="exampleFormControlTextarea1" className="form-label">
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label">
                       your address
                     </label>
                     <textarea

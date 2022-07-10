@@ -131,13 +131,9 @@ const books=createSlice({
             state.error=action.payload; 
         },
         //addBooktocart
-        [addBooktocart.pending]:(state,action)=>{
-            state.isLoading=true;
-            state.error=null;
-        },
         [addBooktocart.fulfilled]:(state,action)=>{
-            state.isLoading=false;
-            state.bookcart.push(action.payload);
+            state.bookcart=state.bookcart.filter(book=>book.id!==action.payload.id)
+            state.bookcart.push(action.payload)
         },
         [addBooktocart.rejected]:(state,action)=>{
             state.isLoading=false;

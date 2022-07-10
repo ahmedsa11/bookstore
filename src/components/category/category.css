@@ -1,0 +1,6 @@
+.nav-tabs{
+    display: flex !important;
+    border-bottom: 1px solid #DEE2F6;
+    justify-content: center !important;
+    margin-top: 15px !important;
+}

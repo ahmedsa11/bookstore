@@ -24,9 +24,9 @@ function Profile() {
               <p>user name: </p>
               <p>email: </p>
               <form>
-                <p for="firstname">first name: </p>
+                <p htmlFor="firstname">first name: </p>
                 <input className="d-inline" id="firstname" type="text" />
-                <p for="lastname">last name: </p>
+                <p htmlFor="lastname">last name: </p>
                 <input className="d-inline" id="lastname" type="text" />
                 <button type="submit" className="reset">
                   save changes
@@ -38,7 +38,7 @@ function Profile() {
             <h3>Change the password</h3>
             <form>
               <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   currently password
                 </label>
                 <input
@@ -49,24 +49,24 @@ function Profile() {
                 />
               </div>
               <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword2" className="form-label">
                   New Password
                 </label>
                 <input
                   type="password"
                   className="form-control"
-                  id="exampleInputPassword1"
+                  id="exampleInputPassword2"
                   required
                 />
               </div>
               <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword3" className="form-label">
                   confirm Password
                 </label>
                 <input
                   type="password"
                   className="form-control"
-                  id="exampleInputPassword1"
+                  id="exampleInputPassword3"
                   required
                 />
               </div>

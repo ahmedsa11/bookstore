@@ -12,7 +12,6 @@ function Navbar() {
         navigate('/signin')
     }
   const togglenavebar = () => {
-
     const hamburger = document.querySelector(".hamburger");
     const menu = document.querySelector(".menu");
     const nav = document.querySelector("nav");
